@@ -1,0 +1,48 @@
+[
+    {
+        "settings": [ "master" ],
+        "appPort" : 2020,
+        "log" : {
+            "client" : {
+                "level" : "warn",
+                "yui" : false
+            },
+            "server" : {
+                "level" : "warn",
+                "yui" : false
+            }
+        },
+        "staticHandling" : {
+            "appName" : "celebhack"
+        },
+        "specs": {
+            "celebhack": {
+                "type": "baseContainerMojit",
+                "config": {
+                    "children": {
+                        "stocktickr": {
+                            "type": "tickrMojit"
+                        },
+                        "leaderboard": {
+                            "type": "leaderBoardMojit"
+                        },
+                        "celebtickr": {
+                            "type": "celebTickrMojit"
+                        },
+                        "myPlayers": {
+                            "type": "myPlayersMojit"
+                        },
+                        "omgNews": {
+                            "type": "omgNewsMojit"
+                        }
+                    },
+                    "assets": {
+                        "bottom":{
+                            "js": ["http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"]
+                        }
+                    }
+                }
+            }
+        }
+    }
+]

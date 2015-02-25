@@ -1,0 +1,44 @@
+<div id="{{mojit_view_id}}" class="stk-bd">
+            <!-- Drop zone for purchasing -->
+            <h3>My Players</h3>
+            <h4>Drag "Celeb Tickr" thumbnails and drop them below to purchase stocks of your celebrities. Click on the celebrity thumbnails below to redeem your stocks.</h4>
+            <div id="player">
+                <div id="play-pic" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="clear"></div>
+            </div>
+
+            <!-- Money -->
+            <div id="money-left"><b><i>Y!</i> Kitty</b> &nbsp;$<span id="balance-left">100</span> Available</div>
+            <div id="percent-container">
+                <div style="width: 100%;" id="percent-bar"></div>
+            </div>
+            <div id="acc-left"><b><i>Y!</i> Mint</b> &nbsp;<span id="acc-balance-left">100</span></div>
+
+            <!-- Navbar -->
+            <ul class="navbar">
+                <li class="active">Snapshot
+                </li><li>Gain & Loss
+                </li><li>Analysis
+                </li><li>Gains
+                </li><li>Transaction History
+                </li><li>Performance</li>
+            </ul>
+
+            <!-- Portfolio -->
+            <div class="portfolio">
+                <div class="snap-hdr-grp">
+                    <div class="snap-hdr ast-col">Celebrity
+                    </div><div class="snap-hdr nav-col">Worth per Share
+                    </div><div class="snap-hdr chgm-col">Change ($)
+                    </div><div class="snap-hdr chgp-col">Change (%)
+                    </div><div class="snap-hdr unt-col">Shares
+                    </div><div class="snap-hdr mkt-col">Net Worth</div>
+                </div>
+                <div id="my-investments"></div>
+                <div id="my-investments-total"></div>
+            </div>
+
+            <!-- Tickr -->
+            <ul id="js-news" class="js-hidden"></ul>
+
+        </div>

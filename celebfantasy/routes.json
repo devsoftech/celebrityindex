@@ -1,0 +1,9 @@
+[{
+    "settings": [ "master" ],
+    "home": {
+    	"verbs": ["get"],
+    	"path": "/",
+    	"call": "celebhack.index"
+    }
+
+}]

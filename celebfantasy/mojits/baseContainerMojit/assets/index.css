@@ -1,0 +1,433 @@
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+/* custom */
+body {
+    font-size: 13px;
+    font-family: Arial;
+    background: #E1E1E1;
+}
+
+/* Navbar */
+.navbar {
+    margin: 10px 0 0 10px;
+    border: 1px #C4C4C4 solid;
+    border-bottom: none;
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    width: 99px;
+    height: 35px;
+    vertical-align: top;
+    text-align: center;
+    background: #E6E6E6;
+    padding: 5px 0 0 0;
+    cursor: pointer;
+    color: #1D6790;
+    font-weight: bold;
+}
+
+.navbar li.active {
+    background: #FAAD82;
+    background: linear-gradient(to bottom, #FBECBE 0%,#FF9653 100%); /* W3C */
+}
+
+.navbar li a {
+    text-decoration: none;
+}
+
+    /* Portfolio */
+.portfolio {
+    border: 1px #C4C4C4 solid;
+    border-top: none;
+    width: 593px;
+    box-shadow: 3px 3px 0 0 #F1F1F1;
+    margin: 0 10px 10px 10px;
+    color: #333;
+    font-family: Arial;
+}
+
+.portfolio .snap-data {
+    font-family: Georgia;
+}
+
+.portfolio .snap-data a {
+    text-decoration: none;
+}
+
+.portfolio .snap-data a.sell {
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    color: #ff8888;
+}
+
+.portfolio .snap-data a:hover {
+    text-decoration: underline;
+}
+
+.portfolio .snap-data .plus {
+    display: inline-block;
+    color: #339933;
+    font-weight: bold;
+}
+
+.portfolio .snap-data .minus {
+    display: inline-block;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.portfolio .snap-hdr, .portfolio .snap-data, .portfolio .snap-smry {
+    padding: 3px;
+}
+
+.portfolio .snap-hdr-grp {
+    border-bottom: 1px #D1D1D1 solid;
+    display: inline-block;
+}
+
+.portfolio .snap-data-grp {
+    border-bottom: 1px #D1D1D1 solid;
+    display: inline-block;
+}
+
+.portfolio .snap-smry-grp {
+    border-top: 1px #666666 solid;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.portfolio .snap-hdr {
+    background: #FF9653;
+    display: inline-block;
+    vertical-align: top;
+    height: 35px;
+    text-align: center !important;
+    line-height: 14px;
+    font-weight: bold;
+    color: #FFF;
+    padding-top: 10px;
+}
+
+.portfolio .snap-data-grp .snap-data {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.portfolio .snap-smry-grp .snap-smry {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.portfolio .ast-col {
+    width: 150px;
+    text-align: left;
+    padding-left: 10px;
+    font-family: Arial;
+}
+
+.portfolio .nav-col {
+    width: 80px;
+    text-align: right;
+}
+
+.portfolio .chgm-col {
+    width: 80px;
+    text-align: right;
+}
+
+.portfolio .chgp-col {
+    width: 80px;
+    text-align: right;
+}
+
+.portfolio .unt-col {
+    width: 80px;
+    text-align: right;
+}
+
+.portfolio .mkt-col {
+    width: 80px;
+    text-align: right;
+}
+
+.portfolio .fuse-ast-nav-chg-col {
+    width: 415px;
+    text-align: right;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+/* Ticker */
+.ticker-wrapper.has-js {
+    background-color: #F8F0DB;
+    border-radius: 15px 15px 15px 15px;
+    display: block;
+    font-size: 12px;
+    height: 32px;
+    margin: 15px 0;
+    padding: 0 20px;
+    width: 565px;
+}
+
+.left .ticker-content, .left .ticker-title, .left .ticker {
+    float: left;
+}
+
+.ticker {
+    background-color: #F8F0DB;
+    display: block;
+    height: 23px;
+    overflow: hidden;
+    position: relative;
+    width: 570px;
+}
+
+.ticker-title {
+    background-color: #F8F0DB;
+    color: #990000;
+    font-weight: bold;
+    padding-top: 9px;
+    text-transform: uppercase;
+}
+
+.ticker-content {
+    background-color: #F8F0DB;
+    color: #1F527B;
+    font-weight: bold;
+    line-height: 14px;
+    margin: 0 0 0 10px;
+    overflow: hidden;
+    padding-top: 10px;
+    white-space: nowrap;
+}
+
+.ticker-content a {
+    color: #1F527B;
+    text-decoration: none;
+}
+
+    /* Leader board */
+.ldrbd-bd {
+    width: 200px;
+}
+.ldrbd-bd h3 {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0 14px 5px;
+    color: #EA005B;
+}
+
+.ldrbd-bd ol {
+   padding: 5px;
+}
+
+.ldrbd-bd ol li {
+    margin: 0 0 5px 0;
+    padding: 5px 0 5px 0;
+}
+.ldrbd-bd ol li.oddrow {
+    background: #F1F1F1;
+}
+.ldrbd-bd ol li.evenrow {
+    background: #FFFFFF;
+}
+
+.ldrbd-bd ol li div {
+    display: inline-block;
+}
+
+.ldrbd-bd ol li div.name {
+    text-align: left;
+    width: 120px;
+    font-family: Georgia;
+}
+
+
+.ldrbd-bd ol li div.score {
+    text-align: right;
+    width: 40px;
+    font-weight: bold;
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+/* Marquee */
+#all-celebs {
+    background: #000;
+    float: right;
+    height: 600px;
+    overflow: hidden;
+    text-align: center;
+    width: 247px;
+}
+
+#all-celebs  img {
+    padding: 10px;
+    width: 150px;
+    height: 125px;
+}
+
+#play-pic {
+    background: #F1F1F1;
+    margin-left: 10px;
+    padding: 2px;
+    width: 591px;
+    min-height: 91px;
+}
+#play-pic img {
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+
+/* Container elements */
+.container .ldrbd-bd, .container .stk-bd, .container .mqe-bd {
+    vertical-align: top;
+    display: inline-block;
+}
+.clear {
+    float: none;
+    clear: both;
+}
+
+/* container */
+.container {
+    margin: 0 auto;
+    width: 1070px;
+    border: 1px solid #F1F1F1;
+    box-shadow: 0 1px 3px 3px #999999;
+    background: #FFF;
+}
+
+/* Money */
+#money-left {
+    color: #5E5E5E;
+    font-size: 16px;
+    margin: 25px 0 0 10px;
+}
+#percent-container {
+    background-color: #5E5E5E;
+    width: 275px;
+    margin: 5px 0 20px 10px;
+}
+#percent-bar {
+    background-color: #9BCF56;
+    height: 16px;
+}
+#acc-left {
+    color: #5E5E5E;
+    font-size: 16px;
+    margin: 25px 0 0 10px;
+}
+#acc-container {
+    background-color: #5E5E5E;
+    width: 275px;
+    margin: 5px 0 20px 10px;
+}
+#acc-bar {
+    background-color: #9BCF56;
+    height: 16px;
+}
+
+/* Investment Details */
+.stk-bd h3 {
+    margin: 10px 0 10px 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #EA005B;
+}
+.stk-bd h4 {
+    margin: 15px 0 10px 10px;
+    font-weight: bold;
+    width: 594px;
+    color: #1D6790;
+}
+/* Celeb Tickr */
+.mqe-bd h3 {
+    margin: 10px 0 18px 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #EA005B;
+}
+
+.warning {
+    background-color: #FFEFEF;
+    border: 1px solid #D36161;
+    text-align: center;
+    font-weight: bold;
+    height: 150px;
+    line-height: 150px;
+    color: #9A1616;
+}
+.you {
+    color: #1D6790;
+    font-weight: bold;
+    font-size: 22px;
+}
+.header {
+    /*background-image: url("header_img.png");*/
+    height: 108px;
+    margin: 0 auto;
+    width: 983px;
+}
+.stock-bd h2 {
+    margin: 10px auto;
+    font-weight: bold;
+    color: #EA005B;
+    font-size: 20px;
+    width: 300px;
+}
+.hdr-ctr {
+    background: #FFA729;
+}
+
+
+#ft .yahoo {
+    background: none repeat scroll 0 0 #005685;
+    height: 70px;
+}
+
+#ft div.ctr {
+    margin: auto;
+    width: 950px;
+}
+
+#ft .yahoo .copyright {
+    font-size: 12px;
+    padding: 10px 0 0 20px;
+}
+
+.clear {
+    clear: both;
+    float: none;
+}
+
+#ft .yahoo .copyright cite {
+    color: #96E3F9;
+    padding-right: 10px;
+}
+#ft div.ctr ul {
+    padding: 15px 0 0;
+}
+
+#ft .yahoo .copyright ul, #ft .yahoo .copyright li {
+    display: inline;
+}
+
+#ft .yahoo .copyright .first a {
+    border: 0 none;
+}
+#ft .yahoo .copyright a {
+    border-left: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 0 16px;
+    text-decoration: none;
+}
+#ft li {
+    list-style: none outside none;
+}
