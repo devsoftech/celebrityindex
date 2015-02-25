@@ -1,2 +1,2 @@
-celebrityindex
+Celebrity Fantasy game using YQL
 ==============
